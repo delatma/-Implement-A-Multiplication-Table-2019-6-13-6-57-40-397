@@ -34,10 +34,12 @@ function formatttedMultiplicationTable(startNumber, endNumber)
 {
     let multiplicationTable = "";
 
-        for(let i = startNumber; i <= endNumber; i++){
-            for(let j = startNumber; j <= i; j++){
+        for(let i = startNumber; i <= endNumber; i++)
+        {
+            for(let j = startNumber; j <= i; j++)
+            {
                 let product = i*j;
-                multiplicationTable += j + "*" + i + "=" + i*j + " ";
+                multiplicationTable += `${j}*${i}=${product} `;
             }
             multiplicationTable += '\n';
         }
