@@ -37,7 +37,7 @@ function formatttedMultiplicationTable(startNumber, endNumber)
         for(let i = startNumber; i <= endNumber; i++){
             for(let j = startNumber; j <= i; j++){
                 let product = i*j;
-                multiplicationTable += `${j}*${i}=${product} `;
+                multiplicationTable += j + "*" + i + "=" + i*j + " ";
             }
             multiplicationTable += '\n';
         }
