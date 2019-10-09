@@ -32,9 +32,17 @@ function checkStartNumberSmallerThanEndNumber(startNumber, endNumber)
 
 function formatttedMultiplicationTable(startNumber, endNumber)
 {
+    let multiplicationTable = "";
 
-	return 'test';
+        for(let i = startNumber; i <= endNumber; i++){
+            for(let j = startNumber; j <= i; j++){
+                let product = i*j;
+                multiplicationTable += `${j}*${i}=${product} `;
+            }
+            multiplicationTable += '\n';
+        }
+        return multiplicationTable;
 }
 
-
 module.exports = generateMultiplicationTable;
+
